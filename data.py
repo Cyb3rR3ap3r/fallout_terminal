@@ -117,10 +117,5 @@ line9 = text18 + "   " + text19
 
 # This is the password
 pwd = rc(current_possible_pass)
-
-
-
-
-
-
+pwd_len = len(pwd)
 
