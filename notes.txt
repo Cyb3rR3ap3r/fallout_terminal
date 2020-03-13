@@ -10,13 +10,15 @@ Goals:
 3. User would have options to explore different areas after hack
 4. Different areas would be controlled with seperate scripts
 
-Areas:
-1. Fallout Hacking Game
-2. Term Based Web Browser?
-   Spotify in terminal
-   Videos/Pictures in terminal
-3. Secret Area ("Access Denied")
-4. S.P.E.C.I.A.L. system
-   If we can do Videos/Pictures, have fallout videos
-5. Pip-Boy Inventory
 
+Menu Option Ideas:
+
+
+S.P.E.C.I.A.L. system sub menu
+Web Browser - Links2
+Videos - MPlayer
+Music - Spotify with TIZONIA
+Quit - Quit the program
+
+
+5. Pip-Boy Inventory

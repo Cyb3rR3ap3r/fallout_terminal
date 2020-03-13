@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-from random import choice as rc    
+from random import choice as rc
 # Doing it this way allows the variables to be dynamic after ever run
 
 current_possible_pass = []
@@ -119,3 +119,11 @@ line9 = text18 + "   " + text19
 pwd = rc(current_possible_pass)
 pwd_len = len(pwd)
 
+
+##################################################################
+
+# Menu
+
+def strength():
+    os.system('clear')
+    

@@ -14,7 +14,6 @@ import sys
 import os
 import time
 import data  # ./data.py
-import password  # ./password.py
 import menu # ./menu.py
 
 os.system('clear')    # Clear screen
@@ -54,7 +53,7 @@ def refresh():     # This function quickly prints the text used in main, subtrac
 	print(data.line8)
 	print(data.line9)
 	print("")
-	
+
 	if guesses > 0:
 		guesser()
 	else:
@@ -62,8 +61,8 @@ def refresh():     # This function quickly prints the text used in main, subtrac
 
 
 def guesser():      # This is the function that compares the password with the value enterd by user
-	global guesses	
-	global guess1 
+	global guesses
+	global guess1
 	global guess2
 	global guess3
 	global guess4
@@ -103,7 +102,7 @@ def guesser():      # This is the function that compares the password with the v
 		print("> " + guess4)
 		print("Entry Denied")
 		print(matched4)
-		
+
 	if guesses == 0:
 		pass
 	else:
@@ -112,7 +111,7 @@ def guesser():      # This is the function that compares the password with the v
 
 	if guesses == 4:
 		guess1 += guess.upper()       # Want to try elif now that I know the logic works
-	
+
 	elif guesses == 3:
 		guess2 += guess.upper()
 
@@ -121,7 +120,7 @@ def guesser():      # This is the function that compares the password with the v
 
 	elif guesses == 1:
 		guess4 += guess.upper()
-	
+
 
 	if guess == data.pwd:
 		print("Exact Match!")
@@ -132,8 +131,8 @@ def guesser():      # This is the function that compares the password with the v
 		print("Entry Denied")
 
 		matched = 0   # How many letters matched
-		
-		if guess_len < 4:     
+
+		if guess_len < 4:
 			pass
 		elif guess_len > 4:
 			pass
@@ -148,7 +147,7 @@ def guesser():      # This is the function that compares the password with the v
 				elif guess[i] == data.pwd[3]:
 					matched += 1
 
-		
+
 		correct = ("> " + str(matched) + "/4 correct.")
 		print(correct)
 
@@ -161,10 +160,10 @@ def guesser():      # This is the function that compares the password with the v
 		elif guesses == 1:
 			matched4 += correct
 		refresh()
-		
+
 
 def failed():
-	global guess1 
+	global guess1
 	global guess2
 	global guess3
 	global guess4
@@ -173,7 +172,7 @@ def failed():
 	guess3_len = len(guess3)
 	guess4_len = len(guess4)
 	os.system('clear')
-	global guesses    
+	global guesses
 	print("WELCOME TO ROBCO INDUSTRIES (TM) TERMLINK")
 	print("PASSWORD REQUIRED...")
 	print("")
@@ -222,15 +221,15 @@ def failed():
 	print("> ")
 	print("> Terminal Locked")
 	for char in "> Shuting down":
-		print(char, sep=' ', end='', flush=True)   
+		print(char, sep=' ', end='', flush=True)
 		time.sleep(0.00)
 	for char in ".....":
-		print(char, sep=' ', end='', flush=True)  
+		print(char, sep=' ', end='', flush=True)
 		time.sleep(1.5)
 	os.system('clear')
 
 def main():
-	
+
 	for char in "WELCOME TO ROBCO INDUSTRIES (TM) TERMLINK":
 		print(char, sep=' ', end='', flush=True)
 		time.sleep(0.03)
@@ -240,7 +239,7 @@ def main():
 	for char in "PASSWORD REQUIRED...":
 		print(char, sep=' ', end='', flush=True)
 		time.sleep(0.03)
-	print("\n") 
+	print("\n")
 
 	for char in attempts:
 		print(char, sep=' ', end='', flush=True)
@@ -251,7 +250,7 @@ def main():
 	for char in data.line0:
 		print(char, sep=' ', end='', flush=True)
 		time.sleep(0.01)
-	print("") 
+	print("")
 	for char in data.line1:
 		print(char, sep=' ', end='', flush=True)
 		time.sleep(0.01)
@@ -288,7 +287,7 @@ def main():
 		print(char, sep=' ', end='', flush=True)
 		time.sleep(0.01)
 	print("\n")
-	#print(data.pwd)     ##################### Remove / For Testing ####################
+	print(data.pwd)     ##################### Remove / For Testing
 	guesser()
 
 
