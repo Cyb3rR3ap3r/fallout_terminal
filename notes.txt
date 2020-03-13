@@ -1,0 +1,22 @@
+Written in Python
+
+
+Use Cool Retro Term for the emulator
+https://github.com/Swordfish90/cool-retro-term.git
+
+Goals:
+1. Python script start the emulator automatically
+2. Script would launch into hacking game
+3. User would have options to explore different areas after hack
+4. Different areas would be controlled with seperate scripts
+
+Areas:
+1. Fallout Hacking Game
+2. Term Based Web Browser?
+   Spotify in terminal
+   Videos/Pictures in terminal
+3. Secret Area ("Access Denied")
+4. S.P.E.C.I.A.L. system
+   If we can do Videos/Pictures, have fallout videos
+5. Pip-Boy Inventory
+
