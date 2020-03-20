@@ -228,8 +228,80 @@ def failed():
 		time.sleep(1.5)
 	os.system('clear')
 
-def main():
+def boot():
+	for char in "WELCOME TO ROBCO INDUSTRIES (TM) TERMLINK":
+		print(char, sep=' ', end='', flush=True)
+		time.sleep(0.03)
+	print("\n")
+	for char in "> ":
+		print(char, sep=' ', end='', flush=True)
+		time.sleep(0.0)
+	time.sleep(.5)
+	for char in "SET TERMINAL/INQUIRE":
+		print(char, sep=' ', end='', flush=True)
+		time.sleep(0.1)
+	print("\n")
+	for char in "RIT-V300":
+		print(char, sep=' ', end='', flush=True)
+		time.sleep(0.01)
+	print("\n")
+	for char in "> ":
+		print(char, sep=' ', end='', flush=True)
+		time.sleep(0.0)
+	time.sleep(.8)
+	for char in "SET FILE/PROTECTION-OWNER:RWED ACCOUNTS.F":
+		print(char, sep=' ', end='', flush=True)
+		time.sleep(0.1)
+	print("")
+	for char in "> ":
+		print(char, sep=' ', end='', flush=True)
+		time.sleep(0.0)
+	time.sleep(.7)
+	for char in "SET HALT RESTART/MANT":
+		print(char, sep=' ', end='', flush=True)
+		time.sleep(0.1)
+	print("\n")
+	for char in "INITIALIZING ROBCO INDUSTRIES(TM) MF BOOT AGENT V2.3.0":
+		print(char, sep=' ', end='', flush=True)
+		time.sleep(0.01)
+	print("")
+	for char in "RETROS BIOS":
+		print(char, sep=' ', end='', flush=True)
+		time.sleep(0.01)
+	print("")
+	for char in "RBIOS-4.02.08.00 52EE5.E7.E8":
+		print(char, sep=' ', end='', flush=True)
+		time.sleep(0.01)
+	print("")
+	for char in "COPYRIGHT 2201-2203 ROBCO IND.":
+		print(char, sep=' ', end='', flush=True)
+		time.sleep(0.01)
+	print("")
+	for char in "UPPERMEN: 64 KB":
+		print(char, sep=' ', end='', flush=True)
+		time.sleep(0.01)
+	print("")
+	for char in "ROOT (5A8)":
+		print(char, sep=' ', end='', flush=True)
+		time.sleep(0.01)
+	print("")
+	for char in "MAINTENANCE MODE":
+		print(char, sep=' ', end='', flush=True)
+		time.sleep(0.01)
+	print("\n")
+	for char in "> ":
+		print(char, sep=' ', end='', flush=True)
+		time.sleep(0.0)
+	time.sleep(1.5)
+	for char in "RUN DEBUG/ACCOUNTS.F":
+		print(char, sep=' ', end='', flush=True)
+		time.sleep(0.1)
 
+	time.sleep(3)
+	os.system('clear')
+
+def main():
+	boot()
 	for char in "WELCOME TO ROBCO INDUSTRIES (TM) TERMLINK":
 		print(char, sep=' ', end='', flush=True)
 		time.sleep(0.03)
