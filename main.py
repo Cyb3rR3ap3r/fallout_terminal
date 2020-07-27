@@ -359,7 +359,7 @@ def main():
 		print(char, sep=' ', end='', flush=True)
 		time.sleep(0.01)
 	print("\n")
-	print(data.pwd)     ##################### Remove / For Testing
+	#print(data.pwd)     ##################### Remove / For Testing
 	guesser()
 
 
