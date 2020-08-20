@@ -1,5 +1,5 @@
 # Fallout Terminal
-A Fallout Inspired terminal game
+A Fallout Inspired Terminal Simulation
 
 
 # Resources
